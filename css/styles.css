@@ -1,17 +1,22 @@
 * {}
 
+:root {
+    --green-color: #7acc2d;
+    --white-color: white;
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 12px;
 }
 
 nav {
-    background-color: #7acc2d;
-    color: white;
+    background-color: var(--green-color);
+    color: var(--white-color);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +38,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 .main-section {
@@ -42,24 +47,122 @@ nav li a:hover {
 }
 
 .main-section h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
 .products {
     background-image: url(../assets/img/curve.png);
-    height: 200px;
+    height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 15%;
+    padding: 20%;
     display: flex;
 }
 
 .product {
     padding: 10px;
+    margin-top: -240px;
 }
 
 .product .content {
-    background-color: white;
-    padding: 20px;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.13);
+    padding: 15px;
+}
+
+.img-content {
+    text-align: center;
+}
+
+.main-buttom {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: var(--white-color);
+    border-style: none;
+    border-radius: 2px;
+}
+
+.main-buttom:hover {
+    background-color: #528a1d;
+    cursor: pointer;
+}
+
+.features {
+    background-color: var(--white-color);
+    padding: 5% 10%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.features h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.features p {
+    text-align: left;
+}
+
+.feature {
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+}
+
+.feature-description {
+    padding: 0 15%;
+}
+
+.feature img {
+    text-align: center;
+    width: 80px;
+    height: 70px;
+}
+
+.mentions {
+    padding: 10px 10%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-mentions h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.mention {
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.075);
+}
+
+.mention-image {
+    margin: 0;
+}
+
+.mention-image img {
+    width: 100%;
+}
+
+.mention-description {
+    padding: 0 1em;
+}
+
+.mention-description h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info-footer {
+    background-color: #528a1d;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
