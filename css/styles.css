@@ -166,3 +166,51 @@ nav li a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.modulo-pago {
+    background-color: white;
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.13);
+    padding: 10px;
+}
+
+.modulo-pago-images {
+    max-width: 150px;
+}
+
+.modulo-pago form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    /* justify-content: space-evenly; */
+}
+
+.modulo-pago form label {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.modulo-pago form input {
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+
+.modulo-pago form button {
+    width: auto;
+    height: 35px;
+    margin-top: 10px;
+    /* text-align: center; */
+    border: 1px solid;
+    background-color: #7acc2d;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* vertical-align: middle; */
+}
+
+.modulo-pago form button:hover {
+    background-color: #528a1d;
+}
